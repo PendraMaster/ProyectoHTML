@@ -25,11 +25,14 @@ main div{
     justify-content: space-around;
     animation: entrada;
     -webkit-animation: entrada;
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
 }
 
-main div::after{
-    margin-left: 0%;
-}
+
 
 .main div:nth-child(1) {
   background-color: blue;
@@ -46,6 +49,14 @@ main div::after{
   background-color: yellow;
   animation-duration: 3000ms;
 
+}
+
+.main div:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
 @keyframes entrada {

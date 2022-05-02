@@ -1,9 +1,35 @@
-main{
-    font-size: 15pt;
-    text-align: center;
+main {
+  font-size: 15pt;
+  text-align: center;
 }
 
-main div{
-    margin-bottom: 10px;
-    border: 1px solid black;
+main div {
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  overflow: hidden;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+.main div:nth-child(1) {
+  background-color: blue;
+  animation-duration: 2000ms;
+}
+
+.main div:nth-child(2) {
+  background-color: red;
+  animation-duration: 2500ms;
+}
+
+.main div:nth-child(3) {
+  background-color: yellow;
+  animation-duration: 3000ms;
 }

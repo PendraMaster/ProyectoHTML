@@ -5,6 +5,7 @@ body {
   background-position-y: -200px;
   margin: 0;
   font-family: "Ultra";
+  user-select: none;
 }
 
 @font-face {
@@ -190,4 +191,29 @@ footer > p {
   100% {
     opacity: 1;
   }
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-right: 30px;
+  float: right;
+  padding: 0 25px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 20px;
+  background-color: #eeeded;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.chip img {
+  float: left;
+  margin: 0 10px 0 -25px;
+
+  border-radius: 50%;
 }
