@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+#caminar {
+    background: url(../media/img/gatomina.png);
+    width: 200px;
+    height: 90px;
+    margin: 0 auto;
+    animation: camina 1.5s steps(12) infinite;
+    -webkit-animation: camina 1.5s steps(12) infinite;
+}
+
+@keyframes camina {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: 0px -1180px;
+    }
+}
+
+#back {
+    background: url(../media/img/back.jpg) ;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    animation: back 19s linear infinite;
+}
+
+@keyframes back {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: 2160px 0px;
+    }
+}
+
+#bulto {
+    height: 70vh;
+}

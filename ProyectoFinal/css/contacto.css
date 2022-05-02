@@ -1,0 +1,21 @@
+body {
+    font-family: "Ultra";
+}
+
+@font-face {
+    font-family: "Ultra";
+    src: url(../font/Ultra-Regular.ttf);
+}
+
+#pregunta {
+    text-align: center;
+    padding-top: 10%;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}

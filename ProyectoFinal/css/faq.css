@@ -1,0 +1,9 @@
+main{
+    font-size: 15pt;
+    text-align: center;
+}
+
+main div{
+    margin-bottom: 10px;
+    border: 1px solid black;
+}

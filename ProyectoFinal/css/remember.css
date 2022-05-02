@@ -1,0 +1,12 @@
+div {
+  width: 40vw;
+  height: 25vh;
+}
+
+div > p {
+  font-size: medium;
+}
+
+#email {
+  background-position: 430px;
+}

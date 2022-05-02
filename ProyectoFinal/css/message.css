@@ -1,0 +1,11 @@
+div {
+  width: 40vw;
+  height: 25vh;
+}
+
+div > p {
+  font-size: large;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+

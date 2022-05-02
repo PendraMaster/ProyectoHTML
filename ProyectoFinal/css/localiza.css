@@ -1,0 +1,20 @@
+
+#localiza {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: safe; */
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 100px;
+
+}
+
+ p {
+  font-family: "Ultra";
+  font-size: 20pt;
+}
+
+@font-face {
+  font-family: "Ultra";
+  src: url(../font/Ultra-Regular.ttf);
+}

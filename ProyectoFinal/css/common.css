@@ -1,0 +1,193 @@
+body {
+  background-image: url(../media/img/backimg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -200px;
+  margin: 0;
+  font-family: "Ultra";
+}
+
+@font-face {
+  font-family: "Ultra";
+  src: url(../font/Ultra-Regular.ttf);
+}
+
+body > div {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgb(252, 252, 252);
+  box-shadow: 3px 0px 3px black, -3px 0px 3px black;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  border-right: 1px solid black;
+}
+
+nav > div {
+  grid-column: 1 span 1;
+  text-align: center;
+  border-left: 1px solid black;
+}
+
+nav > div > a {
+  display: block;
+  padding: 2px;
+}
+
+nav > div > a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  padding: 5px;
+}
+
+body > div {
+  display: grid;
+  grid-template-rows: 20vh 60vh 20vh;
+  grid-template-columns: 1;
+  height: 100vh;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.head {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.main {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.foo {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#hr {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-right: 30px;
+  float: right;
+}
+
+footer {
+  margin-left: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  overflow: hidden;
+  width: 30%;
+}
+
+footer > p {
+  margin: 0;
+  margin-bottom: -40px;
+  font-size: 12pt;
+  height: 100px;
+  animation: 4000ms Copi ease-in-out;
+  -webkit-animation: 4000ms Copi ease-in-out;
+}
+
+.ajax-loader {
+  position: absolute;
+  transform: rotate(-90deg);
+  font-size: 30px;
+  top: 85%;
+  right: 26%;
+  color: black;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+}
+.ajax-loader .paw {
+  width: 1em;
+  height: 1em;
+  animation: 2050ms pawAnimation ease-in-out;
+  opacity: 0;
+  -webkit-animation: 2050ms pawAnimation ease-in-out;
+}
+.ajax-loader .paw svg {
+  width: 100%;
+  height: 100%;
+}
+
+.ajax-loader .paw:nth-child(odd) {
+  transform: rotate(-10deg);
+}
+.ajax-loader .paw:nth-child(even) {
+  transform: rotate(10deg) translate(125%, 0);
+}
+
+.ajax-loader .paw:nth-child(1) {
+  -webkit-animation-delay: 1.75s;
+  animation-delay: 1.75s;
+}
+
+.ajax-loader .paw:nth-child(2) {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.ajax-loader .paw:nth-child(3) {
+  -webkit-animation-delay: 1.25s;
+  animation-delay: 1.25s;
+}
+.ajax-loader .paw:nth-child(4) {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.ajax-loader .paw:nth-child(5) {
+  -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+}
+.ajax-loader .paw:nth-child(6) {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.ajax-loader .paw:nth-child(7) {
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+.ajax-loader .paw:nth-child(8) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+@keyframes pawAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes Copi {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
